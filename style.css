@@ -64,7 +64,7 @@ body {
   }
   
   .carros img {
-    width: 40%; 
+    width: 60%; 
     border-radius: 10px; 
   }
   .texto {
@@ -89,4 +89,92 @@ body {
   button:hover {
     background-color: #e6a607;
   }
+  
+ 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1 ,2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .carros img {
+    width: 100%; 
+    border-radius: 10px; 
+  }
+  .container {
+    margin: 10px auto;
+    padding: 0 10px; 
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .carros {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  button {
+    font-size: 1.2rem; 
+    padding: 8px 10px;
+  }
+
+}
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .grid {
+    display: grid;
+    grid-template-columns: repeat(2 ,2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .carros img {
+    width: 100%; 
+    border-radius: 10px; 
+  }
+  .container {
+    margin: 10px auto;
+    padding: 0 10px; 
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .carros {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  button {
+    font-size: 1.2rem; 
+    padding: 8px 15px;
+  }
+    }
+  
+
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      .grid {
+    display: grid;
+    grid-template-columns: repeat(2 ,2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .carros img {
+    width: 60%; 
+    border-radius: 10px; 
+  }
+  .container {
+    margin: 10px auto;
+    padding: 0 10px; 
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.2rem; 
+    padding: 8px 15px;
+  }
+    }
   
